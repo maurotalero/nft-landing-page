@@ -8,11 +8,11 @@
   --font-primary: 'Fredoka', sans-serif;
   --font-secondary: 'Arvo', serif;
   --font-code: 'Roboto', monospace;
-  --bg-color: #171819;
+  --bg-color: #392d91;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
   --accent-color: #dd962a;
-  --header-shadow: #171819 0px 0px 5px;
+  --header-shadow: #171819 0px 0px 0px;
 }
 
 * {
@@ -33,9 +33,9 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 1536px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 2.4rem 0 0 0;
 }
 
 /* HEADER */
@@ -52,7 +52,7 @@ header .container {
 
 .menu {
   display: flex;
-  gap: 2rem;
+  gap: 2.4rem;
   align-items: center;
 }
 
@@ -67,7 +67,7 @@ header .container {
   font-style: normal;
   font-weight: bold;
   font-size: 1rem;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   transition: all 0.3s ease;
   box-shadow: none;/*4px 0px 0 0 var(--accent-color);*/
   cursor: pointer;
@@ -80,13 +80,13 @@ header .container {
 }
 
 .wallet-btn {
-  border-radius: none;
+  border-radius: 8px;
   margin-left: 2rem;
   border-color: transparent;
 }
 
 .hero-btn {
-  border-radius: none;
+  border-radius: 8px;
   font-size: 1.2rem;
   padding: 1.5rem 3rem;
 }
@@ -102,25 +102,25 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 75%;
 }
 
 .countdown ul {
   display: flex;
-  gap: 2rem
+  gap: rem
 }
 .countdown .clock-item {
   list-style: none;
-  width: 128px;
+  width: 250px;
   height: auto;
 }
 .countdown .clock-item .count-number {
-  background: var(--accent-color);
+  background: var(--bg-color);
   color: var(--font-color);
-  font-size: 4rem;
-  font-weight: 700;
-  font-family: var(--font-secondary);
-  padding: 2.4rem 1rem 2.4rem 1rem;
+  font-size: 8rem;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  padding: 0 1rem 0.4rem 1rem;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -128,11 +128,12 @@ section {
   border-radius: 16px 16px 0 0;
 }
 .countdown .clock-item .count-text {
-  background: var(--btn-bg-color);
-  font-family: var(--font-secondary);
-  font-size: 1.1rem;
-  color: var(--bg-color);
-  padding: 1.2rem 0 1.4rem 0;
+  background: var(--bg-color);
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  /*font-weight: bold;*/
+  color: var(--font-color);
+  padding: 1.2rem 0 8rem 0;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -141,18 +142,19 @@ section {
 }
 
 .countdown h1 {
+  font-family: var(--font-secondary);
   text-shadow: none;
   font-weight: 600;
   font-style: normal;
   margin: 2rem 0;
-  font-size: 4.8rem;
+  font-size: 4rem;
   text-align: center;
 }
 
 .countdown p {
-  font-size: 1.1rem;
-  font-family: var(--font-secondary);
-  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-family: var(--font-primary);
+  margin-bottom: 4rem;
   text-align: center;
 }
 
